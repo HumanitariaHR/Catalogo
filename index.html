@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Todo en Uno — Catálogo</title>
-<meta name="description" content="[COMPLETAR: descripción corta del emprendimiento para buscadores, ej: Catálogo online de bijou artesanal. Consultá y comprá por WhatsApp.]">
+<meta name="description" content="Todo en Uno: emprendimiento familiar con productos para el hogar, artesanías hechas a mano y sorteos. Consultá y comprá por WhatsApp.">
 
 <!-- Open Graph (para que se vea bien al compartir en WhatsApp/Instagram) -->
-<meta property="og:title" content="[COMPLETAR: Nombre del emprendimiento]">
-<meta property="og:description" content="[COMPLETAR: descripción corta para compartir]">
+<meta property="og:title" content="Todo en Uno">
+<meta property="og:description" content="Productos para tu hogar, cosas hechas a mano y sorteos. Un emprendimiento familiar.">
 <meta property="og:image" content="[COMPLETAR: URL de una imagen de portada, 1200x630px]">
 <meta property="og:type" content="website">
 
@@ -253,9 +253,10 @@ h1,h2,h3{font-family:var(--fuente-titulos); font-weight:600; line-height:1.15;}
      ============================================================ -->
 <header class="header">
   <div class="header-inner">
-    <a href="#inicio" class="logo">[COMPLETAR NOMBRE]<span>.</span></a>
+    <a href="#inicio" class="logo">Todo en Uno<span>.</span></a>
     <nav class="nav-desktop">
       <a href="#catalogo">Catálogo</a>
+      <a href="#hecho-a-mano">Hecho a mano</a>
       <a href="#sorteos">Sorteos</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#como-comprar">Cómo comprar</a>
@@ -273,11 +274,14 @@ h1,h2,h3{font-family:var(--fuente-titulos); font-weight:600; line-height:1.15;}
      ============================================================ -->
 <section class="hero" id="inicio">
   <div class="contenedor">
-    <div class="hero-badge"><span class="punto"></span> Emprendimiento real · Respondemos todas las consultas</div>
-    <h1>Productos elegidos <em>con cariño</em>,<br>a un mensaje de distancia.</h1>
-    <p>[COMPLETAR: frase corta que resuma qué vendés y por qué comprarte a vos. Ej: "Bijou y accesorios artesanales, hechos a mano y enviados a todo el país."]</p>
+    <div class="hero-badge"><span class="punto"></span> Emprendimiento familiar · Respondemos todas las consultas</div>
+    <h1>Todo en Uno:<br><em>un poquito de todo</em>, pensado para vos.</h1>
+    <!-- 👉 SLOGAN: para cambiarlo, editá solo el texto dentro del <em> de arriba -->
+    <p>Productos para tu hogar, cosas hechas a mano y sorteos. Todo en un mismo lugar, con la cercanía de un emprendimiento familiar.</p>
     <div class="hero-acciones">
-      <a href="#catalogo" class="btn btn-principal">Ver catálogo</a>
+      <a href="#catalogo" class="btn btn-principal">Descubrí nuestros productos</a>
+      <a href="#hecho-a-mano" class="btn btn-fantasma">Hecho a mano</a>
+      <a href="#sorteos" class="btn btn-fantasma">Sorteos</a>
       <a id="hero-cta-wsp" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener">
         Comprar por WhatsApp
       </a>
@@ -295,6 +299,7 @@ h1,h2,h3{font-family:var(--fuente-titulos); font-weight:600; line-height:1.15;}
     <p class="subtitulo-seccion">Tocá "Consultar por WhatsApp" en cualquier producto y coordinamos todo enseguida.</p>
 
     <div class="filtros" id="filtros"></div>
+    <a id="hecho-a-mano" style="display:block; position:relative; top:-90px;"></a>
     <div class="grilla-productos" id="grilla-productos"></div>
   </div>
 </section>
@@ -317,23 +322,31 @@ h1,h2,h3{font-family:var(--fuente-titulos); font-weight:600; line-height:1.15;}
 <section class="seccion" id="confianza">
   <div class="contenedor">
     <div class="eyebrow">Por qué comprarnos</div>
-    <h2 class="titulo-seccion">Confianza, de principio a fin</h2>
+    <h2 class="titulo-seccion">¿Por qué comprar en Todo en Uno?</h2>
     <div class="grilla-confianza">
       <div class="tarjeta-confianza">
-        <h3>💬 Atención real</h3>
-        <p>Cada consulta la respondemos nosotros mismos, sin bots ni esperas eternas.</p>
+        <h3>👨‍👩‍👧 Emprendimiento familiar</h3>
+        <p>Somos una familia de tres. Cada consulta la respondemos nosotros mismos, de forma cercana y personalizada.</p>
+      </div>
+      <div class="tarjeta-confianza">
+        <h3>🧶 Hecho con dedicación</h3>
+        <p>Elegimos cada producto para el hogar con cuidado, y nuestras artesanías a crochet las hacemos a mano, pieza por pieza.</p>
+      </div>
+      <div class="tarjeta-confianza">
+        <h3>💬 Comunicación directa</h3>
+        <p>Consultás, confirmamos disponibilidad y coordinamos todo por WhatsApp, sin vueltas.</p>
       </div>
       <div class="tarjeta-confianza">
         <h3>💳 Medios de pago</h3>
-        <p>[COMPLETAR: ej. Transferencia, Mercado Pago, efectivo en entrega]</p>
+        <p>[COMPLETAR MEDIOS DE PAGO]</p>
       </div>
       <div class="tarjeta-confianza">
         <h3>📦 Envíos y entregas</h3>
-        <p>[COMPLETAR: ej. Envíos a todo el país por correo / entrega en mano en zona X]</p>
+        <p>[COMPLETAR INFORMACIÓN SOBRE ENVÍOS] · Zona de entrega: [AGREGAR ZONAS]</p>
       </div>
       <div class="tarjeta-confianza">
         <h3>🔄 Cambios y devoluciones</h3>
-        <p>[COMPLETAR: tu política de cambios]</p>
+        <p>[COMPLETAR POLÍTICA DE CAMBIOS]</p>
       </div>
     </div>
   </div>
@@ -346,13 +359,14 @@ h1,h2,h3{font-family:var(--fuente-titulos); font-weight:600; line-height:1.15;}
   <div class="contenedor">
     <div class="sobre-grid">
       <div class="sobre-foto">
-        <img src="[COMPLETAR: URL de foto tuya o del emprendimiento]" alt="Foto de [COMPLETAR NOMBRE]">
+        <img src="[COMPLETAR: URL de foto de la familia o del emprendimiento]" alt="Foto de la familia de Todo en Uno">
       </div>
       <div class="sobre-texto">
-        <div class="eyebrow">Sobre nosotros</div>
-        <p>[COMPLETAR: presentación en primera persona, cercana. Ej: "Hola, soy [nombre] y armo cada producto a mano desde [ciudad]."]</p>
-        <p>[COMPLETAR: un párrafo más contando la historia o el porqué del emprendimiento.]</p>
-        <p>[COMPLETAR: cuánto tiempo llevan, qué los distingue, etc.]</p>
+        <div class="eyebrow">Somos una familia</div>
+        <p>Todo en Uno es un emprendimiento familiar formado por una familia de tres.</p>
+        <p>Nació como un proyecto pensado para nuestros hijos, con la idea de que ellos puedan llevarlo adelante y hacerlo crecer con el tiempo.</p>
+        <p>Ofrecemos productos para el hogar, artesanías hechas a mano a crochet, y organizamos sorteos. La idea es simple: que encuentres un poquito de todo en un mismo lugar, con la cercanía de una atención personalizada. Recién estamos empezando a construir esto, y queremos hacerlo crecer junto con nuestros clientes.</p>
+        <p style="font-size:13px; color:var(--color-texto-suave);">[COMPLETAR NOMBRE: si querés nombrar a los integrantes de la familia individualmente, agregalo acá]</p>
       </div>
     </div>
   </div>
@@ -403,28 +417,34 @@ h1,h2,h3{font-family:var(--fuente-titulos); font-weight:600; line-height:1.15;}
 <footer class="footer" id="contacto">
   <div class="contenedor footer-grid">
     <div>
-      <h4 style="font-family:var(--fuente-titulos); font-size:20px; text-transform:none; color:#fff;">[COMPLETAR NOMBRE]</h4>
-      <p style="margin-top:10px; max-width:320px;">[COMPLETAR: frase corta de cierre sobre el emprendimiento]</p>
+      <h4 style="font-family:var(--fuente-titulos); font-size:20px; text-transform:none; color:#fff;">Todo en Uno</h4>
+      <p style="margin-top:6px; font-size:13px; color:rgba(255,255,255,.7);">Emprendimiento familiar</p>
+      <p style="margin-top:10px; max-width:320px;">Un poquito de todo, pensado para vos.</p>
       <div class="footer-social">
         <a id="footer-wsp" href="#" target="_blank" rel="noopener">WhatsApp</a>
-        <a id="footer-ig" href="[COMPLETAR: URL de Instagram]" target="_blank" rel="noopener">Instagram</a>
-        <a id="footer-fb" href="[COMPLETAR: URL de Facebook, si aplica]" target="_blank" rel="noopener">Facebook</a>
+        <a id="footer-ig" href="[AGREGAR INSTAGRAM]" target="_blank" rel="noopener">Instagram</a>
+        <a id="footer-fb" href="[AGREGAR FACEBOOK]" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
     <div>
       <h4>Explorar</h4>
       <p><a href="#catalogo">Catálogo</a></p>
+      <p><a href="#hecho-a-mano">Hecho a mano</a></p>
       <p><a href="#sorteos">Sorteos</a></p>
+      <p><a href="#como-comprar">Cómo comprar</a></p>
       <p><a href="#faq">Preguntas frecuentes</a></p>
+      <p><a href="[COMPLETAR: link o sección de términos y condiciones]">Términos y condiciones</a></p>
+      <p><a href="[COMPLETAR: link o sección de política de privacidad]">Política de privacidad</a></p>
     </div>
     <div>
       <h4>Contacto</h4>
-      <p>[COMPLETAR: WhatsApp visible, ej. +54 9 351 XXX-XXXX]</p>
-      <p>[COMPLETAR: email si tenés]</p>
-      <p>[COMPLETAR: ciudad/zona de entrega]</p>
+      <p>WhatsApp: +54 9 351 614-7483</p>
+      <p>[AGREGAR EMAIL]</p>
+      <p>[AGREGAR CIUDAD]</p>
+      <p>Horarios de atención: [COMPLETAR]</p>
     </div>
   </div>
-  <div class="footer-bottom">© <span id="anio"></span> [COMPLETAR NOMBRE]. Todos los derechos reservados.</div>
+  <div class="footer-bottom">© <span id="anio"></span> Todo en Uno. Todos los derechos reservados.</div>
 </footer>
 
 <!-- Botón flotante -->
@@ -437,8 +457,9 @@ h1,h2,h3{font-family:var(--fuente-titulos); font-weight:600; line-height:1.15;}
    12) CONFIGURACIÓN GENERAL — EDITÁ ACÁ TU WHATSAPP
    ============================================================ */
 const CONFIG = {
-  whatsappNumero: "[COMPLETAR: número con código de país, sin +, sin espacios. Ej: 5493511234567]",
-  nombreEmprendimiento: "[COMPLETAR NOMBRE]"
+  // Número de Todo en Uno (Córdoba) en formato internacional para WhatsApp: 54 9 351 6147483
+  whatsappNumero: "5493516147483",
+  nombreEmprendimiento: "Todo en Uno"
 };
 
 function armarLinkWhatsapp(mensaje){
@@ -449,25 +470,34 @@ function armarLinkWhatsapp(mensaje){
 /* ============================================================
    13) PRODUCTOS — AGREGÁ, EDITÁ O BORRÁ ACÁ
    Copiá un bloque { ... } completo para agregar un producto nuevo.
+
+   categoria: usá una de las 3 categorías principales, o creá una nueva
+     "Todo para el hogar" | "Hecho a mano" | otra que quieras agregar
    disponible: true = se puede comprar / false = muestra "Agotado"
+   hechoAMano: true = muestra el sello "Hecho a mano ❤️"
+   piezaUnica: true = muestra la etiqueta "Pieza única" (para artesanías)
    ============================================================ */
 const PRODUCTOS = [
   {
     codigo: "P001",
     nombre: "[COMPLETAR: nombre del producto]",
-    categoria: "[COMPLETAR: categoría, ej. Aros]",
+    categoria: "Todo para el hogar",
     descripcion: "[COMPLETAR: descripción breve, 1 línea]",
     precio: 0,
     disponible: true,
+    hechoAMano: false,
+    piezaUnica: false,
     imagen: "[COMPLETAR: URL de la foto]"
   },
   {
     codigo: "P002",
-    nombre: "[COMPLETAR: nombre del producto]",
-    categoria: "[COMPLETAR: categoría]",
+    nombre: "[COMPLETAR: nombre del producto tejido a crochet]",
+    categoria: "Hecho a mano",
     descripcion: "[COMPLETAR: descripción breve]",
     precio: 0,
-    disponible: false,
+    disponible: true,
+    hechoAMano: true,
+    piezaUnica: true,
     imagen: "[COMPLETAR: URL de la foto]"
   }
   // 👉 Agregá más productos copiando el formato de arriba
@@ -483,7 +513,7 @@ const SORTEOS = [
     cantidadNumeros: "[COMPLETAR: ej. 100]",
     precioNumero: "[COMPLETAR: ej. $1.000]",
     fecha: "[COMPLETAR: fecha del sorteo]",
-    estado: "Abierto" // Abierto / Cerrado / Finalizado
+    estado: "Abierto" // Escribí exactamente: Abierto | Finalizado (Finalizado desactiva el botón)
   }
   // 👉 Agregá más sorteos copiando el formato de arriba
 ];
@@ -524,16 +554,17 @@ function renderProductos(lista){
     return;
   }
   lista.forEach(p=>{
-    const mensaje = `Hola 👋 Vi este producto en el catálogo y quiero consultar:\n\nProducto: ${p.nombre}\nCódigo: ${p.codigo}\nPrecio: ${formatoPrecio(p.precio)}\n\n¿Está disponible?`;
+    const mensaje = `Hola 👋 Vi este producto en Todo en Uno y quisiera consultar si está disponible:\n\nProducto: ${p.nombre}\nCódigo: ${p.codigo}\nPrecio: ${formatoPrecio(p.precio)}`;
     const card = document.createElement("div");
     card.className = "tarjeta";
     card.innerHTML = `
       <div class="tarjeta-imagen">
         <img src="${p.imagen}" alt="${p.nombre}" loading="lazy">
         <span class="badge-estado ${p.disponible ? '' : 'agotado'}">${p.disponible ? 'Disponible' : 'Agotado'}</span>
+        ${p.hechoAMano ? `<span class="badge-estado" style="left:auto; right:10px; background:var(--color-acento);">Hecho a mano ❤️</span>` : ''}
       </div>
       <div class="tarjeta-cuerpo">
-        <span class="tarjeta-categoria">${p.categoria}</span>
+        <span class="tarjeta-categoria">${p.categoria}${p.piezaUnica ? ' · Pieza única' : ''}</span>
         <span class="tarjeta-nombre">${p.nombre}</span>
         <span class="tarjeta-desc">${p.descripcion}</span>
         <span class="tarjeta-precio">${formatoPrecio(p.precio)}</span>
@@ -574,20 +605,24 @@ function renderSorteos(){
     return;
   }
   SORTEOS.forEach(s=>{
-    const mensaje = `Hola 👋 Quiero participar del sorteo:\n\nPremio: ${s.titulo}\n\n¿Cómo hago para participar?`;
+    const mensaje = `Hola 👋 Vi el sorteo en Todo en Uno y quiero consultar cómo participar:\n\nPremio: ${s.titulo}`;
+    const finalizado = s.estado === "Finalizado";
     const card = document.createElement("div");
     card.className = "ticket";
     card.innerHTML = `
       <div class="ticket-imagen"><img src="${s.imagen}" alt="${s.titulo}" loading="lazy"></div>
       <div class="ticket-cuerpo">
-        <span class="ticket-estado">${s.estado}</span>
+        <span class="ticket-estado" ${finalizado ? 'style="background:#8A8078;"' : ''}>${s.estado}</span>
         <span class="ticket-titulo">${s.titulo}</span>
         <div class="ticket-filas">
           <div class="ticket-fila"><b>Cant. de números</b>${s.cantidadNumeros}</div>
           <div class="ticket-fila"><b>Precio por número</b>${s.precioNumero}</div>
           <div class="ticket-fila"><b>Fecha del sorteo</b>${s.fecha}</div>
         </div>
-        <a class="btn btn-whatsapp btn-bloque" style="margin-top:8px;" target="_blank" rel="noopener" href="${armarLinkWhatsapp(mensaje)}">Quiero participar</a>
+        ${finalizado
+          ? `<button class="btn btn-desactivado btn-bloque" style="margin-top:8px;" disabled>Sorteo finalizado</button>`
+          : `<a class="btn btn-whatsapp btn-bloque" style="margin-top:8px;" target="_blank" rel="noopener" href="${armarLinkWhatsapp(mensaje)}">Quiero participar</a>`
+        }
       </div>
     `;
     cont.appendChild(card);
